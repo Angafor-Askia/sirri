@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .carousel-container{
+            width: 800px;
+            height: 400px;
+            display: flex;
+            overflow: auto;
+        }
+        .carousel-container{
+            width: 14.28%;
+            height: 100%;
+            margin: 01%;
+            cursor: pointer;
+        }
+        .carousel-container img.active{
+            width: 21.42%;
+            transform: scale(1.5);
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="carousel-container">
+        <img src="images/image1.jpg"style="width: 100px;height: 100px;" alt="image 1" class="active">
+        <img src="camera.jpg" style="width: 100px;height: 100px;" alt="image 2">
+        <img src="girl.jpg"style="width: 100px; height: 100px;" alt="image 3">
+        <img src="girl.jpeg"style="width: 100px;height: 100px;" alt="image 4">
+        <img src="imsge2.jpg"style="width: 100px;height: 100px;" alt="image 5">
+        <img src="laptop2.jpg"style="width: 100px;height: 100px;" alt="image 6">
+        <img src="wardrop.jpg"style="width: 100px;height: 100px;"  alt="image 7">
+
+
+    </div>
+    <script src="https://code jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.carousel-container img').on('click',function(){
+            $('.carousel-containerimg').removeClass('active')
+            $(this).addClass('active')
+        });
+    </script>
+</body>
+</html>
